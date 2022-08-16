@@ -1,4 +1,5 @@
-package inter;
+package inter.implement;
+import inter.Connection;
 
 public class ConnectionVoid implements Connection{
 

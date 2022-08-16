@@ -1,4 +1,5 @@
-package inter;
+package inter.implement;
+import inter.Connection;
 
 public class ConnectionOracle implements Connection {
 
@@ -7,7 +8,7 @@ public class ConnectionOracle implements Connection {
 	private String usuario;
 	private String contrasena;
 
-	public ConexionOracle() {
+	public ConnectionOracle() {
 		this.host = "localhost";
 		this.puerto = "1521";
 		this.usuario = "admin";

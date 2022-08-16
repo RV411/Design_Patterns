@@ -1,4 +1,5 @@
-package inter;
+package inter.implement;
+import inter.Connection;
 
 public class ConnectionPostgreSQL implements Connection {
 
@@ -7,7 +8,7 @@ public class ConnectionPostgreSQL implements Connection {
 	private String usuario;
 	private String contrasena;
 
-	public ConexionPostgreSQL() {
+	public ConnectionPostgreSQL() {
 		this.host = "localhost";
 		this.puerto = "1521";
 		this.usuario = "admin";

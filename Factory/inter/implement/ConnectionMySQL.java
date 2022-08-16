@@ -1,4 +1,5 @@
-package inter;
+package inter.implement;
+import inter.Connection;
 
 public class ConnectionMySQL implements Connection{
     private String host;
@@ -10,7 +11,7 @@ public class ConnectionMySQL implements Connection{
         this.host="localhost";
         this.puerto="3306";
         this.usuario="root";
-        this.constrasena="root";
+        this.contrasena="root";
     }
 
     @Override
@@ -26,6 +27,6 @@ public class ConnectionMySQL implements Connection{
     @Override
     public String toString(){
         return "Connection MySQL [host="+host+",puerto="
-        +puerto+",usuario="+usuario+", contraseña"+constrasena+"]";
+        +puerto+",usuario="+usuario+", contraseña"+contrasena+"]";
     }
 }
