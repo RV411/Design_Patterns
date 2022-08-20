@@ -56,6 +56,7 @@
 #
 # Utilizados en Microservicios
 #
+
 > # Descomposicion
 - Subdominios ( Enfoque DDD ) monilitico
 - Estrangulacion. - monolitico -> micro
@@ -68,16 +69,28 @@
 - Reintentos ( Retry ) Resistencia del servicio cuando se cae para intentarlo de nuevo
 - Circuit Breaker. Cierra el ciclo de reintentos y lo vuelve a abrir cuando es necesario
 - Azul/Verde. Para pruebas y produccion. Para cuando una tarea falla, levantar otra en paralelo.
-> # Integración
 
+> # Integración
+- API Gateway. Centralizacion y Unico punto de acceso a toda la infraestructura.
+- Publicador/Subscriptor. Aplicaciones subscritas a eventos, y Eventos publican.
+- Coreografia/Orquestación. Controla pequeños servicios.
+- Saga. Manejo de transacciones entre servicios. (Ctrl Z ) Deshacer cambios cuando un microservicio no esta preparado.
 
 > # Acceso a Datos
-
+- Index Table. Parecido a SQL
+- Shard. Escalabilidad de datos. Horizontal y Vertical.
+- Base de datos por servicio. Escalabilidad de datos. Cada microservicio dueño de sus propios datos.
+- CQRS. Separar operacion Lectura/Escritura para rapidez.
 
 > # Observabilidad
-
+- Agregación de logs. Reune a todos los log de los microservicios.
+- Monitoreo de punto final. (Endpoint) Monitorear el microservicio, si esta activo.
+- metricas de rendimiento. Metricas KPI para evaluar el negocio.
+- Traceo distribuido. Sigue la ruta de un request en el microservicio (tiempo, que servicios utilizo, etc)
 
 > # Servicios Externos
+- Backend por Frontend. Para cada frontend un backend
+- Capa anticorrupcion. Nos dice como hay que conectarse con servicios de terceros para evitar que corrompan nuestros microservicios internos.
 
 
 
