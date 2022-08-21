@@ -17,12 +17,76 @@
 # Mas utilizados
 #
 
-> ## Singleton
+## CREATIONAL
+
+> ## SINGLETON
 
 > ### Se Implementa en:
 > - Una base de datos
 > - Un API
 > - Un servicio (AWS)
+
+> ## PROTOTYPE
+
+> ### Se Implementa en:
+
+
+
+> ## BUILDER
+
+> ### Se Implementa en:
+
+
+
+> ## FACTORY
+
+> ### Se Implementa en:
+
+
+
+
+## STRUCTURAL
+
+> ## FACADE
+
+> ### Se Implementa en:
+
+
+
+> ## PROXY
+
+> ### Se Implementa en:
+
+
+
+## BEHAVIORAL
+
+> ## ITERATOR
+
+> ### Se Implementa en:
+
+
+
+> ## OBSERVER
+
+> ### Se Implementa en:
+
+
+
+
+> ## Mediator
+- Patron de comportamiento, define como se comporta la aplicacion
+- objeto intermediario que comunica a otros objetos 
+- (**Observador** modifica al objeto que tiene que escuchar)
+> ### Se Implementa en:
+> - Redux
+
+ 
+> ## STATE
+
+> ### Se Implementa en:
+
+
 
 
 > ## Decorator
@@ -30,22 +94,11 @@
 > ### Se Implementa en:
 > - 
 
-
-> ## Mediator
-- Patron de comportamiento, define como se comporta la aplicacion
-- objeto intermediario que comunica a otros objetos 
-- (**Observador** modifica al objeto que tiene que escuchar)
-
-> ### Se Implementa en:
-> - Redux
-
-
 > ## Adapter
 - Permite trabajar a objetos que no tienen interfaces con interfaces
 
 
 > ## MVC
-
 > ### Se Implementa en:
 > - UI
 
