@@ -87,7 +87,9 @@
 > ### Se Implementa en:
 
 
-
+> ## Strategy
+Enables you to define a group (or family) of closely-related algorithms **(known as strategies)**. 
+This allows you to swap strategies in and out for each other as needed at runtime.
 
 > ## Decorator
 - Trabaja como la subclase
@@ -105,6 +107,9 @@
 
 > ## Flux
 - Forma de ciclo
+
+
+
 
 #
 # Utilizados en Microservicios
